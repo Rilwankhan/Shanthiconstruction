@@ -1,0 +1,1721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Shanthi Constructions – Building Dreams with Strength & Precision | Trichy</title>
+<meta name="description" content="Shanthi Constructions – Premier construction company in Trichy, Tamil Nadu. Specializing in residential, commercial, renovation, interior design, and civil contracting."/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet"/>
+<style>
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:Arial,sans-serif;background:#fff;color:#1E1E1E;overflow-x:hidden;line-height:1.6}
+img{display:block;max-width:100%;height:auto}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+button{cursor:pointer;border:none;background:none;font-family:Arial,sans-serif}
+
+/* ===== CSS VARIABLES ===== */
+:root{
+  --black:#1E1E1E;
+  --gold:#F4B400;
+  --gold-dark:#d9a000;
+  --white:#fff;
+  --gray-light:#F7F7F7;
+  --gray-mid:#E5E5E5;
+  --gray-text:#666;
+  --section-pad:100px 0;
+  --container:1200px;
+  --radius:4px;
+  --shadow:0 8px 40px rgba(0,0,0,0.10);
+  --shadow-hover:0 16px 60px rgba(0,0,0,0.18);
+  --transition:0.35s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* ===== LOADING SCREEN ===== */
+#loader{position:fixed;inset:0;background:#1E1E1E;z-index:9999;display:flex;flex-direction:column;align-items:center;justify-content:center;transition:opacity 0.6s ease,visibility 0.6s ease}
+#loader.hidden{opacity:0;visibility:hidden}
+.loader-logo{font-family:Arial,sans-serif;font-size:2rem;font-weight:900;color:#fff;letter-spacing:3px;margin-bottom:28px}
+.loader-logo span{color:#F4B400}
+.loader-bar{width:220px;height:3px;background:rgba(255,255,255,0.15);border-radius:2px;overflow:hidden}
+.loader-bar-fill{height:100%;width:0;background:#F4B400;border-radius:2px;animation:loadFill 1.8s ease forwards}
+@keyframes loadFill{to{width:100%}}
+.loader-text{color:#888;font-size:0.78rem;letter-spacing:4px;text-transform:uppercase;margin-top:18px}
+
+/* ===== CONTAINER ===== */
+.container{max-width:var(--container);margin:0 auto;padding:0 24px}
+
+/* ===== NAVBAR ===== */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 24px;transition:background var(--transition),box-shadow var(--transition),padding var(--transition)}
+#navbar.scrolled{background:rgba(30,30,30,0.97);backdrop-filter:blur(12px);box-shadow:0 2px 30px rgba(0,0,0,0.3);padding:0 24px}
+.nav-inner{max-width:var(--container);margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:80px}
+#navbar.scrolled .nav-inner{height:68px}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo-icon{width:44px;height:44px;background:#F4B400;display:flex;align-items:center;justify-content:center;border-radius:2px}
+.nav-logo-icon svg{width:26px;height:26px;fill:#1E1E1E}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1.1}
+.nav-logo-main{font-family:Arial,sans-serif;font-weight:900;font-size:1.15rem;color:#fff;letter-spacing:0.5px}
+.nav-logo-sub{font-size:0.65rem;color:#F4B400;letter-spacing:3px;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-links a{color:rgba(255,255,255,0.85);font-size:0.87rem;font-weight:600;letter-spacing:0.5px;padding:8px 14px;border-radius:2px;transition:color var(--transition);text-transform:uppercase;position:relative}
+.nav-links a::after{content:'';position:absolute;bottom:4px;left:14px;right:14px;height:2px;background:#F4B400;transform:scaleX(0);transition:transform var(--transition);transform-origin:left}
+.nav-links a:hover{color:#F4B400}
+.nav-links a:hover::after{transform:scaleX(1)}
+.nav-links a.active{color:#F4B400}
+.nav-cta{background:#F4B400;color:#1E1E1E !important;padding:10px 22px !important;font-weight:800 !important;border-radius:2px;transition:background var(--transition),transform var(--transition) !important}
+.nav-cta::after{display:none !important}
+.nav-cta:hover{background:#d9a000 !important;transform:translateY(-1px)}
+.nav-mobile-btn{display:none;flex-direction:column;gap:5px;padding:8px;cursor:pointer}
+.nav-mobile-btn span{width:24px;height:2px;background:#fff;border-radius:2px;transition:transform 0.3s,opacity 0.3s}
+.nav-mobile-menu{display:none;position:absolute;top:100%;left:0;right:0;background:#1E1E1E;padding:20px 24px;flex-direction:column;gap:4px;border-top:2px solid #F4B400}
+.nav-mobile-menu a{color:rgba(255,255,255,0.85);font-size:0.9rem;font-weight:600;padding:12px 0;border-bottom:1px solid rgba(255,255,255,0.07);text-transform:uppercase;letter-spacing:0.5px}
+
+/* ===== PAGE SECTIONS VISIBILITY ===== */
+.page-section{display:none}
+.page-section.active{display:block}
+
+/* ===== HERO ===== */
+.hero{position:relative;height:100vh;min-height:700px;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(30,30,30,0.88) 0%,rgba(30,30,30,0.55) 60%,rgba(30,30,30,0.3) 100%)}
+.hero-content{position:relative;z-index:2;max-width:var(--container);margin:0 auto;padding:0 24px;padding-top:80px}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(244,180,0,0.15);border:1px solid rgba(244,180,0,0.4);color:#F4B400;font-size:0.72rem;letter-spacing:4px;text-transform:uppercase;padding:8px 18px;border-radius:2px;margin-bottom:28px;animation:fadeUp 0.8s 0.3s both}
+.hero-badge-dot{width:6px;height:6px;background:#F4B400;border-radius:50%}
+.hero-title{font-family:Arial,sans-serif;font-weight:900;font-size:clamp(2.4rem,5.5vw,5rem);color:#fff;line-height:1.08;margin-bottom:24px;animation:fadeUp 0.8s 0.5s both;max-width:780px}
+.hero-title em{color:#F4B400;font-style:normal}
+.hero-subtitle{font-size:clamp(0.95rem,1.5vw,1.15rem);color:rgba(255,255,255,0.75);max-width:560px;margin-bottom:44px;animation:fadeUp 0.8s 0.7s both;line-height:1.75}
+.hero-actions{display:flex;gap:16px;flex-wrap:wrap;animation:fadeUp 0.8s 0.9s both}
+.btn-primary{display:inline-flex;align-items:center;gap:10px;background:#F4B400;color:#1E1E1E;font-family:Arial,sans-serif;font-weight:800;font-size:0.88rem;letter-spacing:1px;text-transform:uppercase;padding:16px 32px;border-radius:2px;transition:background var(--transition),transform var(--transition),box-shadow var(--transition)}
+.btn-primary:hover{background:#d9a000;transform:translateY(-2px);box-shadow:0 8px 32px rgba(244,180,0,0.4)}
+.btn-outline{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#fff;font-family:Arial,sans-serif;font-weight:700;font-size:0.88rem;letter-spacing:1px;text-transform:uppercase;padding:15px 30px;border:2px solid rgba(255,255,255,0.5);border-radius:2px;transition:all var(--transition)}
+.btn-outline:hover{border-color:#F4B400;color:#F4B400;transform:translateY(-2px)}
+.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;z-index:2;animation:fadeIn 1s 1.5s both}
+.hero-scroll-text{color:rgba(255,255,255,0.5);font-size:0.65rem;letter-spacing:4px;text-transform:uppercase}
+.scroll-line{width:1px;height:50px;background:linear-gradient(to bottom,rgba(244,180,0,0.6),transparent);animation:scrollPulse 2s infinite}
+@keyframes scrollPulse{0%,100%{opacity:0.3;transform:scaleY(1)}50%{opacity:1;transform:scaleY(1.2)}}
+
+/* ===== STATS ===== */
+.stats-section{background:#1E1E1E;padding:70px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat-item{display:flex;flex-direction:column;align-items:center;padding:40px 20px;border-right:1px solid rgba(255,255,255,0.06);position:relative}
+.stat-item:last-child{border-right:none}
+.stat-number{font-family:Arial,sans-serif;font-weight:900;font-size:clamp(2.5rem,4vw,3.8rem);color:#F4B400;line-height:1;margin-bottom:8px}
+.stat-plus{font-size:0.65em;vertical-align:super}
+.stat-label{font-size:0.78rem;color:rgba(255,255,255,0.5);letter-spacing:3px;text-transform:uppercase;text-align:center}
+.stat-divider{width:30px;height:2px;background:#F4B400;margin:12px 0}
+
+/* ===== SECTION HEADER ===== */
+.section-header{text-align:center;margin-bottom:64px}
+.section-tag{display:inline-flex;align-items:center;gap:10px;color:#F4B400;font-size:0.72rem;letter-spacing:4px;text-transform:uppercase;font-weight:700;margin-bottom:16px}
+.section-tag::before,.section-tag::after{content:'';flex:1;height:1px;background:#F4B400;width:24px}
+.section-title{font-family:Arial,sans-serif;font-weight:900;font-size:clamp(1.9rem,3.5vw,2.8rem);color:#1E1E1E;line-height:1.18;margin-bottom:18px}
+.section-title-dark{color:#fff}
+.section-desc{font-size:1rem;color:#666;max-width:560px;margin:0 auto;line-height:1.8}
+.section-desc-dark{color:rgba(255,255,255,0.6)}
+
+/* ===== SERVICES SECTION ===== */
+.services-section{padding:var(--section-pad);background:#fff}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:#E5E5E5}
+.service-card{background:#fff;padding:40px 30px;position:relative;overflow:hidden;transition:background var(--transition),transform var(--transition);cursor:pointer}
+.service-card::before{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:#F4B400;transform:scaleX(0);transition:transform var(--transition);transform-origin:left}
+.service-card:hover{background:#1E1E1E;transform:translateY(-4px);box-shadow:var(--shadow-hover)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-card:hover .service-icon{background:#F4B400;color:#1E1E1E}
+.service-card:hover .service-title{color:#fff}
+.service-card:hover .service-desc{color:rgba(255,255,255,0.6)}
+.service-card:hover .service-link{color:#F4B400}
+.service-icon{width:58px;height:58px;background:#F7F7F7;border-radius:2px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;transition:background var(--transition),color var(--transition);font-size:1.6rem;color:#1E1E1E}
+.service-title{font-family:Arial,sans-serif;font-weight:800;font-size:1rem;color:#1E1E1E;margin-bottom:12px;transition:color var(--transition)}
+.service-desc{font-size:0.85rem;color:#666;line-height:1.75;margin-bottom:24px;transition:color var(--transition)}
+.service-link{font-size:0.78rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#F4B400;display:flex;align-items:center;gap:8px;transition:color var(--transition)}
+.service-link-arrow{transition:transform var(--transition)}
+.service-card:hover .service-link-arrow{transform:translateX(4px)}
+
+/* ===== WHY CHOOSE US ===== */
+.why-section{padding:var(--section-pad);background:#F7F7F7}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.why-image-stack{position:relative;height:580px}
+.why-img-main{width:75%;height:420px;object-fit:cover;object-position:center;border-radius:2px;position:absolute;top:0;left:0;box-shadow:var(--shadow)}
+.why-img-sub{width:55%;height:280px;object-fit:cover;border-radius:2px;position:absolute;bottom:0;right:0;box-shadow:var(--shadow);border:6px solid #fff}
+.why-badge-img{position:absolute;top:50%;left:55%;transform:translate(-50%,-50%);background:#F4B400;color:#1E1E1E;padding:22px 26px;border-radius:2px;text-align:center;box-shadow:0 8px 32px rgba(244,180,0,0.4);z-index:2}
+.why-badge-num{font-weight:900;font-size:2.2rem;line-height:1}
+.why-badge-txt{font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-top:4px}
+.why-content .section-header{text-align:left}
+.why-points{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:32px}
+.why-point{display:flex;gap:14px;align-items:flex-start}
+.why-point-icon{width:40px;height:40px;min-width:40px;background:#1E1E1E;border-radius:2px;display:flex;align-items:center;justify-content:center;color:#F4B400;font-size:1.1rem}
+.why-point-title{font-weight:800;font-size:0.88rem;color:#1E1E1E;margin-bottom:4px}
+.why-point-desc{font-size:0.8rem;color:#666;line-height:1.65}
+
+/* ===== PROJECTS SECTION ===== */
+.projects-section{padding:var(--section-pad);background:#fff}
+.project-filters{display:flex;justify-content:center;gap:8px;margin-bottom:44px;flex-wrap:wrap}
+.filter-btn{padding:10px 24px;border:2px solid #E5E5E5;background:#fff;color:#666;font-family:Arial,sans-serif;font-weight:700;font-size:0.78rem;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;transition:all var(--transition);cursor:pointer}
+.filter-btn.active,.filter-btn:hover{background:#1E1E1E;border-color:#1E1E1E;color:#F4B400}
+.projects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.project-card{position:relative;overflow:hidden;border-radius:2px;cursor:pointer;aspect-ratio:4/3}
+.project-card img{width:100%;height:100%;object-fit:cover;transition:transform 0.6s ease}
+.project-card:hover img{transform:scale(1.08)}
+.project-card-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(30,30,30,0.9) 0%,transparent 55%);opacity:0;transition:opacity var(--transition)}
+.project-card:hover .project-card-overlay{opacity:1}
+.project-card-info{position:absolute;bottom:0;left:0;right:0;padding:24px;transform:translateY(8px);opacity:0;transition:all var(--transition)}
+.project-card:hover .project-card-info{transform:translateY(0);opacity:1}
+.project-cat{font-size:0.68rem;letter-spacing:3px;color:#F4B400;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.project-name{font-family:Arial,sans-serif;font-weight:800;font-size:1rem;color:#fff}
+.project-card.large{grid-row:span 2;aspect-ratio:unset}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials-section{padding:var(--section-pad);background:#1E1E1E}
+.testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.testimonial-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:36px 32px;border-radius:2px;position:relative;transition:background var(--transition),border-color var(--transition)}
+.testimonial-card:hover{background:rgba(244,180,0,0.06);border-color:rgba(244,180,0,0.25)}
+.testimonial-stars{display:flex;gap:4px;margin-bottom:20px}
+.testimonial-stars span{color:#F4B400;font-size:0.95rem}
+.testimonial-quote{font-size:3rem;color:rgba(244,180,0,0.2);font-family:Georgia,serif;line-height:1;margin-bottom:12px}
+.testimonial-text{font-size:0.9rem;color:rgba(255,255,255,0.7);line-height:1.85;margin-bottom:28px;font-style:italic}
+.testimonial-author{display:flex;align-items:center;gap:14px}
+.testimonial-avatar{width:48px;height:48px;border-radius:50%;background:#F4B400;display:flex;align-items:center;justify-content:center;font-weight:900;color:#1E1E1E;font-size:1rem}
+.testimonial-name{font-weight:800;font-size:0.88rem;color:#fff;margin-bottom:2px}
+.testimonial-role{font-size:0.75rem;color:rgba(255,255,255,0.4);letter-spacing:1px}
+
+/* ===== CTA BANNER ===== */
+.cta-section{padding:90px 0;background:#F4B400;position:relative;overflow:hidden}
+.cta-section::before{content:'';position:absolute;top:-50%;right:-10%;width:600px;height:600px;border-radius:50%;background:rgba(255,255,255,0.06)}
+.cta-section::after{content:'';position:absolute;bottom:-60%;left:5%;width:500px;height:500px;border-radius:50%;background:rgba(30,30,30,0.08)}
+.cta-inner{position:relative;z-index:1;text-align:center}
+.cta-title{font-family:Arial,sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3rem);color:#1E1E1E;margin-bottom:16px;line-height:1.15}
+.cta-desc{font-size:1rem;color:rgba(30,30,30,0.7);margin-bottom:44px;max-width:500px;margin-left:auto;margin-right:auto}
+.cta-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+.btn-dark{display:inline-flex;align-items:center;gap:10px;background:#1E1E1E;color:#fff;font-family:Arial,sans-serif;font-weight:800;font-size:0.88rem;letter-spacing:1px;text-transform:uppercase;padding:16px 32px;border-radius:2px;transition:all var(--transition)}
+.btn-dark:hover{background:#333;transform:translateY(-2px);box-shadow:0 8px 32px rgba(0,0,0,0.25)}
+.btn-outline-dark{display:inline-flex;align-items:center;gap:10px;background:transparent;color:#1E1E1E;font-family:Arial,sans-serif;font-weight:800;font-size:0.88rem;letter-spacing:1px;text-transform:uppercase;padding:15px 30px;border:2px solid rgba(30,30,30,0.4);border-radius:2px;transition:all var(--transition)}
+.btn-outline-dark:hover{background:rgba(30,30,30,0.08);transform:translateY(-2px)}
+
+/* ===== FOOTER ===== */
+.footer{background:#111;padding:80px 0 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1.5fr;gap:60px;margin-bottom:60px}
+.footer-brand-logo{display:flex;align-items:center;gap:12px;margin-bottom:22px}
+.footer-brand-text{font-family:Arial,sans-serif;font-weight:900;font-size:1.25rem;color:#fff}
+.footer-brand-text span{color:#F4B400}
+.footer-brand-desc{font-size:0.85rem;color:rgba(255,255,255,0.45);line-height:1.8;margin-bottom:28px}
+.footer-socials{display:flex;gap:10px}
+.social-btn{width:38px;height:38px;background:rgba(255,255,255,0.06);border-radius:2px;display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.5);font-size:0.85rem;font-weight:800;transition:all var(--transition)}
+.social-btn:hover{background:#F4B400;color:#1E1E1E}
+.footer-heading{font-family:Arial,sans-serif;font-weight:800;font-size:0.78rem;color:#fff;letter-spacing:3px;text-transform:uppercase;margin-bottom:22px;padding-bottom:12px;border-bottom:2px solid #F4B400;display:inline-block}
+.footer-links{display:flex;flex-direction:column;gap:10px}
+.footer-links a{font-size:0.85rem;color:rgba(255,255,255,0.45);transition:color var(--transition);display:flex;align-items:center;gap:8px}
+.footer-links a::before{content:'→';color:#F4B400;font-size:0.75rem;transition:transform var(--transition)}
+.footer-links a:hover{color:#F4B400}
+.footer-links a:hover::before{transform:translateX(3px)}
+.footer-contact-item{display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
+.footer-contact-icon{width:36px;height:36px;min-width:36px;background:#F4B400;border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:#1E1E1E}
+.footer-contact-label{font-size:0.68rem;color:#888;letter-spacing:2px;text-transform:uppercase;margin-bottom:2px}
+.footer-contact-val{font-size:0.85rem;color:rgba(255,255,255,0.75)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.06);padding:24px 0;display:flex;align-items:center;justify-content:space-between}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.3)}
+.footer-copy span{color:#F4B400}
+.footer-bottom-links{display:flex;gap:20px}
+.footer-bottom-links a{font-size:0.75rem;color:rgba(255,255,255,0.3);transition:color var(--transition)}
+.footer-bottom-links a:hover{color:#F4B400}
+
+/* ===== ABOUT PAGE ===== */
+.page-hero{position:relative;height:420px;display:flex;align-items:flex-end;overflow:hidden}
+.page-hero-bg{position:absolute;inset:0}
+.page-hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center top}
+.page-hero-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(30,30,30,0.92) 0%,rgba(30,30,30,0.55) 100%)}
+.page-hero-content{position:relative;z-index:1;max-width:var(--container);margin:0 auto;padding:0 24px 52px}
+.page-hero-tag{font-size:0.7rem;letter-spacing:4px;color:#F4B400;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.page-hero-title{font-family:Arial,sans-serif;font-weight:900;font-size:clamp(2rem,4vw,3.2rem);color:#fff;line-height:1.15}
+.page-hero-breadcrumb{display:flex;align-items:center;gap:8px;margin-top:12px;font-size:0.78rem;color:rgba(255,255,255,0.45)}
+.page-hero-breadcrumb span{color:#F4B400}
+
+.about-intro{padding:90px 0;background:#fff}
+.about-intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.about-intro-img{position:relative}
+.about-intro-img img{width:100%;height:480px;object-fit:cover;border-radius:2px}
+.about-intro-accent{position:absolute;bottom:-20px;right:-20px;width:160px;height:160px;background:#F4B400;border-radius:2px;z-index:-1}
+.about-est{font-size:0.7rem;letter-spacing:4px;text-transform:uppercase;color:#F4B400;font-weight:700;margin-bottom:12px}
+.about-intro-title{font-family:Arial,sans-serif;font-weight:900;font-size:clamp(1.6rem,2.8vw,2.4rem);color:#1E1E1E;line-height:1.2;margin-bottom:20px}
+.about-intro-text{font-size:0.9rem;color:#555;line-height:1.85;margin-bottom:16px}
+.about-vals{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
+.about-val{background:#F7F7F7;padding:20px;border-left:3px solid #F4B400;border-radius:2px}
+.about-val-title{font-weight:800;font-size:0.88rem;color:#1E1E1E;margin-bottom:4px}
+.about-val-desc{font-size:0.78rem;color:#666;line-height:1.6}
+
+.vm-section{padding:90px 0;background:#1E1E1E}
+.vm-grid{display:grid;grid-template-columns:1fr 1fr;gap:32px}
+.vm-card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.07);padding:50px 44px;border-radius:2px;position:relative;overflow:hidden}
+.vm-card::before{content:'';position:absolute;top:0;left:0;bottom:0;width:4px;background:#F4B400}
+.vm-icon{font-size:2.5rem;color:#F4B400;margin-bottom:22px}
+.vm-title{font-family:Arial,sans-serif;font-weight:900;font-size:1.4rem;color:#fff;margin-bottom:16px}
+.vm-text{font-size:0.88rem;color:rgba(255,255,255,0.55);line-height:1.85}
+.vm-points{margin-top:20px;display:flex;flex-direction:column;gap:10px}
+.vm-point{display:flex;align-items:center;gap:10px;font-size:0.85rem;color:rgba(255,255,255,0.6)}
+.vm-point::before{content:'✓';color:#F4B400;font-weight:900}
+
+.team-section{padding:90px 0;background:#F7F7F7}
+.team-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.team-card{background:#fff;border-radius:2px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.06);transition:transform var(--transition),box-shadow var(--transition)}
+.team-card:hover{transform:translateY(-6px);box-shadow:var(--shadow-hover)}
+.team-img{width:100%;aspect-ratio:3/4;object-fit:cover;object-position:top}
+.team-info{padding:22px 20px}
+.team-name{font-family:Arial,sans-serif;font-weight:800;font-size:0.95rem;color:#1E1E1E;margin-bottom:4px}
+.team-role{font-size:0.75rem;color:#F4B400;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:12px}
+.team-desc{font-size:0.78rem;color:#666;line-height:1.65}
+
+.timeline-section{padding:90px 0;background:#fff}
+.timeline{position:relative;max-width:800px;margin:0 auto}
+.timeline::before{content:'';position:absolute;left:50%;top:0;bottom:0;width:2px;background:#E5E5E5;transform:translateX(-50%)}
+.timeline-item{display:flex;gap:40px;margin-bottom:48px;position:relative}
+.timeline-item:nth-child(even){flex-direction:row-reverse}
+.timeline-item:nth-child(even) .timeline-content{text-align:right}
+.timeline-dot{position:absolute;left:50%;top:16px;transform:translateX(-50%);width:16px;height:16px;background:#F4B400;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 3px #F4B400;z-index:1}
+.timeline-content{flex:1;padding:0 40px}
+.timeline-year{font-size:0.7rem;letter-spacing:3px;text-transform:uppercase;color:#F4B400;font-weight:700;margin-bottom:8px}
+.timeline-title{font-family:Arial,sans-serif;font-weight:800;font-size:1rem;color:#1E1E1E;margin-bottom:8px}
+.timeline-desc{font-size:0.83rem;color:#666;line-height:1.7}
+
+/* ===== SERVICES PAGE ===== */
+.services-page-section{padding:90px 0;background:#fff}
+.services-page-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.service-page-card{background:#F7F7F7;border-radius:2px;padding:36px 28px;position:relative;overflow:hidden;transition:all var(--transition);border:2px solid transparent}
+.service-page-card:hover{background:#fff;border-color:#F4B400;box-shadow:var(--shadow-hover);transform:translateY(-6px)}
+.service-page-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:#F4B400;transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
+.service-page-card:hover::after{transform:scaleX(1)}
+.svc-icon-wrap{width:60px;height:60px;background:#1E1E1E;border-radius:2px;display:flex;align-items:center;justify-content:center;margin-bottom:22px;font-size:1.5rem;color:#F4B400;transition:all var(--transition)}
+.service-page-card:hover .svc-icon-wrap{background:#F4B400;color:#1E1E1E}
+.svc-title{font-family:Arial,sans-serif;font-weight:800;font-size:1rem;color:#1E1E1E;margin-bottom:12px}
+.svc-desc{font-size:0.83rem;color:#666;line-height:1.75;margin-bottom:22px}
+.svc-features{display:flex;flex-direction:column;gap:7px;margin-bottom:26px}
+.svc-feature{display:flex;align-items:center;gap:8px;font-size:0.78rem;color:#444}
+.svc-feature::before{content:'✓';color:#F4B400;font-size:0.8rem;font-weight:900;min-width:14px}
+.svc-btn{font-size:0.75rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:#F4B400;display:inline-flex;align-items:center;gap:6px;transition:gap var(--transition)}
+.service-page-card:hover .svc-btn{gap:10px}
+
+/* ===== PROJECTS PAGE ===== */
+.projects-page-section{padding:90px 0;background:#fff}
+.projects-page-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.project-page-card{position:relative;overflow:hidden;border-radius:2px;cursor:pointer;background:#111}
+.project-page-card img{width:100%;height:280px;object-fit:cover;display:block;transition:transform 0.6s ease,opacity 0.4s}
+.project-page-card:hover img{transform:scale(1.07);opacity:0.7}
+.project-page-info{position:absolute;bottom:0;left:0;right:0;padding:28px 24px;background:linear-gradient(to top,rgba(30,30,30,0.95) 0%,transparent 100%);transform:translateY(4px);transition:transform var(--transition)}
+.project-page-card:hover .project-page-info{transform:translateY(0)}
+.project-page-cat{font-size:0.65rem;letter-spacing:3px;color:#F4B400;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.project-page-name{font-weight:800;font-size:0.95rem;color:#fff;margin-bottom:4px}
+.project-page-loc{font-size:0.75rem;color:rgba(255,255,255,0.5);display:flex;align-items:center;gap:5px}
+.project-page-card.featured{grid-column:span 2}
+.project-page-card.featured img{height:380px}
+
+/* ===== CONTACT PAGE ===== */
+.contact-page-section{padding:90px 0;background:#F7F7F7}
+.contact-page-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:60px}
+.contact-form-card{background:#fff;padding:52px 48px;border-radius:2px;box-shadow:var(--shadow)}
+.contact-form-title{font-family:Arial,sans-serif;font-weight:900;font-size:1.6rem;color:#1E1E1E;margin-bottom:8px}
+.contact-form-sub{font-size:0.85rem;color:#666;margin-bottom:36px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:20px}
+.form-group{display:flex;flex-direction:column;gap:8px;margin-bottom:20px}
+.form-group label{font-size:0.75rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#444}
+.form-group input,.form-group textarea,.form-group select{font-family:Arial,sans-serif;font-size:0.88rem;color:#1E1E1E;background:#F7F7F7;border:2px solid #E5E5E5;border-radius:2px;padding:13px 16px;transition:border-color var(--transition);outline:none;resize:vertical}
+.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:#F4B400;background:#fff}
+.form-group textarea{min-height:130px}
+.form-submit-btn{width:100%;background:#F4B400;color:#1E1E1E;font-family:Arial,sans-serif;font-weight:800;font-size:0.9rem;letter-spacing:1.5px;text-transform:uppercase;padding:18px;border-radius:2px;transition:all var(--transition)}
+.form-submit-btn:hover{background:#d9a000;transform:translateY(-1px);box-shadow:0 8px 24px rgba(244,180,0,0.4)}
+.contact-info-sidebar{display:flex;flex-direction:column;gap:24px}
+.contact-info-card{background:#1E1E1E;color:#fff;padding:36px;border-radius:2px}
+.contact-info-card-title{font-family:Arial,sans-serif;font-weight:900;font-size:1.1rem;color:#fff;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid rgba(255,255,255,0.08)}
+.contact-detail{display:flex;gap:16px;margin-bottom:20px;align-items:flex-start}
+.contact-detail:last-child{margin-bottom:0}
+.contact-detail-icon{width:42px;height:42px;min-width:42px;background:#F4B400;border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:1rem;color:#1E1E1E}
+.contact-detail-label{font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:#888;margin-bottom:3px}
+.contact-detail-val{font-size:0.85rem;color:rgba(255,255,255,0.8)}
+.contact-hours-card{background:#fff;padding:32px;border-radius:2px;border:2px solid #E5E5E5}
+.contact-hours-title{font-weight:800;font-size:0.78rem;letter-spacing:2px;text-transform:uppercase;color:#1E1E1E;margin-bottom:16px}
+.hours-row{display:flex;justify-content:space-between;font-size:0.82rem;padding:8px 0;border-bottom:1px solid #F7F7F7;color:#555}
+.hours-row:last-child{border-bottom:none}
+.hours-day{font-weight:700;color:#1E1E1E}
+.hours-open{color:#2a7a2a;font-weight:700}
+.map-section{padding:0 0 90px;background:#F7F7F7}
+.map-placeholder{border-radius:2px;overflow:hidden;height:420px;background:#1E1E1E;position:relative;box-shadow:var(--shadow)}
+.map-placeholder iframe{width:100%;height:100%;border:none;display:block}
+
+/* ===== FLOATING BUTTONS ===== */
+.float-group{position:fixed;bottom:32px;right:32px;z-index:900;display:flex;flex-direction:column;gap:12px;align-items:flex-end}
+.float-wa{width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.5);transition:transform var(--transition),box-shadow var(--transition)}
+.float-wa:hover{transform:scale(1.1);box-shadow:0 8px 30px rgba(37,211,102,0.6)}
+.float-wa svg{width:28px;height:28px;fill:#fff}
+.float-call{width:52px;height:52px;background:#F4B400;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(244,180,0,0.5);transition:transform var(--transition)}
+.float-call:hover{transform:scale(1.1)}
+.float-call svg{width:22px;height:22px;fill:#1E1E1E}
+.float-label{background:#1E1E1E;color:#fff;font-size:0.7rem;padding:5px 10px;border-radius:20px;white-space:nowrap;opacity:0;transform:translateX(6px);transition:all var(--transition);pointer-events:none;position:absolute;right:64px}
+.float-wa:hover .float-label,.float-call:hover .float-label{opacity:1;transform:translateX(0)}
+.float-wa,.float-call{position:relative}
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.reveal{opacity:0;transform:translateY(32px);transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal-left{opacity:0;transform:translateX(-32px);transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal-left.visible{opacity:1;transform:translateX(0)}
+.reveal-right{opacity:0;transform:translateX(32px);transition:opacity 0.65s ease,transform 0.65s ease}
+.reveal-right.visible{opacity:1;transform:translateX(0)}
+
+/* ===== RIBBON / DECORATIVE ===== */
+.gold-line{display:flex;align-items:center;gap:12px;margin-bottom:12px}
+.gold-line-bar{width:48px;height:3px;background:#F4B400;border-radius:2px}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1100px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .projects-page-card.featured{grid-column:span 1}
+  .services-page-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:900px){
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .stat-item:nth-child(2){border-right:none}
+  .why-grid{grid-template-columns:1fr;gap:48px}
+  .why-image-stack{height:400px}
+  .about-intro-grid{grid-template-columns:1fr;gap:40px}
+  .vm-grid{grid-template-columns:1fr}
+  .contact-page-grid{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr 1fr}
+  .testimonials-grid{grid-template-columns:1fr 1fr}
+  .form-row{grid-template-columns:1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .nav-mobile-btn{display:flex}
+  .services-grid{grid-template-columns:1fr}
+  .projects-grid{grid-template-columns:1fr}
+  .services-page-grid{grid-template-columns:1fr}
+  .testimonials-grid{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column;align-items:flex-start}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .cta-actions{flex-direction:column;align-items:center}
+  .timeline::before{left:0}
+  .timeline-item{flex-direction:column !important;padding-left:32px}
+  .timeline-item:nth-child(even) .timeline-content{text-align:left}
+  .timeline-dot{left:0;transform:none}
+  .timeline-content{padding:0}
+  .team-grid{grid-template-columns:1fr 1fr}
+  .projects-page-grid{grid-template-columns:1fr 1fr}
+  .contact-form-card{padding:32px 24px}
+}
+@media(max-width:480px){
+  :root{--section-pad:70px 0}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .projects-page-grid{grid-template-columns:1fr}
+  .team-grid{grid-template-columns:1fr}
+  .why-points{grid-template-columns:1fr}
+  .about-vals{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- ===== LOADER ===== -->
+<div id="loader">
+  <div class="loader-logo">SHANTHI <span>CONSTRUCTIONS</span></div>
+  <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  <div class="loader-text">Building Excellence Since 2005</div>
+</div>
+
+<!-- ===== NAVBAR ===== -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <div class="nav-logo" onclick="showPage('home')" style="cursor:pointer">
+      <div class="nav-logo-icon">
+        <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L2 14h4v16h7v-8h6v8h7V14h4L16 2zm0 3.5L26 14.5V28h-4v-8H10v8H6V14.5L16 5.5z"/></svg>
+      </div>
+      <div class="nav-logo-text">
+        <span class="nav-logo-main">Shanthi Constructions</span>
+        <span class="nav-logo-sub">Trichy, Tamil Nadu</span>
+      </div>
+    </div>
+    <div class="nav-links">
+      <a href="#" onclick="showPage('home');return false" class="active" id="nav-home">Home</a>
+      <a href="#" onclick="showPage('about');return false" id="nav-about">About</a>
+      <a href="#" onclick="showPage('services');return false" id="nav-services">Services</a>
+      <a href="#" onclick="showPage('projects');return false" id="nav-projects">Projects</a>
+      <a href="#" onclick="showPage('contact');return false" class="nav-cta" id="nav-contact">Contact Us</a>
+    </div>
+    <div class="nav-mobile-btn" onclick="toggleMobileMenu()" id="mobileBtn">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+  <div class="nav-mobile-menu" id="mobileMenu">
+    <a href="#" onclick="showPage('home');toggleMobileMenu();return false">Home</a>
+    <a href="#" onclick="showPage('about');toggleMobileMenu();return false">About</a>
+    <a href="#" onclick="showPage('services');toggleMobileMenu();return false">Services</a>
+    <a href="#" onclick="showPage('projects');toggleMobileMenu();return false">Projects</a>
+    <a href="#" onclick="showPage('contact');toggleMobileMenu();return false">Contact Us</a>
+  </div>
+</nav>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="float-group">
+  <a class="float-wa" href="https://wa.me/919876543210?text=Hello%20Shanthi%20Constructions%2C%20I'm%20interested%20in%20your%20services." target="_blank" aria-label="WhatsApp">
+    <span class="float-label">Chat on WhatsApp</span>
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 0C7.164 0 0 7.164 0 16c0 2.82.738 5.47 2.03 7.77L0 32l8.39-2.002A15.96 15.96 0 0016 32c8.836 0 16-7.164 16-16S24.836 0 16 0zm8.086 22.285c-.34.96-1.992 1.835-2.73 1.953-.716.115-1.617.16-2.598-.16-.6-.19-1.37-.44-2.36-.87-4.15-1.797-6.856-6.04-7.062-6.32-.204-.28-1.672-2.22-1.672-4.24 0-2.02 1.06-3.01 1.437-3.42.376-.41.82-.512 1.094-.512.273 0 .547 0 .785.01.252.01.59-.097.924.707.34.82 1.16 2.84 1.262 3.05.103.207.17.45.034.727-.137.28-.206.453-.41.695-.204.246-.43.55-.614.738-.205.206-.418.43-.18.844.24.415 1.066 1.76 2.29 2.85 1.573 1.4 2.9 1.834 3.313 2.04.41.204.65.17.89-.102.24-.273 1.02-1.192 1.296-1.603.273-.41.546-.34.916-.204.37.136 2.37 1.12 2.775 1.322.41.204.683.307.783.476.102.17.102.987-.236 1.947z"/></svg>
+  </a>
+  <a class="float-call" href="tel:+919876543210" aria-label="Call us">
+    <span class="float-label">Call Us Now</span>
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1-9.4 0-17-7.6-17-17 0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1L6.6 10.8z"/></svg>
+  </a>
+</div>
+
+<!-- ================================================================ -->
+<!-- HOME PAGE -->
+<!-- ================================================================ -->
+<div id="page-home" class="page-section active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1590674899484-d5640e854abe?w=1800&auto=format&fit=crop&q=80" alt="Construction site Shanthi Constructions Trichy" loading="eager"/>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="hero-badge-dot"></span> Trusted Builders in Trichy Since 2005 <span class="hero-badge-dot"></span></div>
+      <h1 class="hero-title">Building Dreams with<br/><em>Strength & Precision</em></h1>
+      <p class="hero-subtitle">Shanthi Constructions delivers excellence in residential, commercial, and industrial construction across Trichy, Tamil Nadu — crafted with integrity and built to last generations.</p>
+      <div class="hero-actions">
+        <a class="btn-primary" href="#" onclick="showPage('contact');return false">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          Get Free Consultation
+        </a>
+        <a class="btn-outline" href="#" onclick="showPage('projects');return false">
+          <svg width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/></svg>
+          View Our Projects
+        </a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-text">Scroll</div>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number"><span class="count-up" data-target="19">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item reveal" style="transition-delay:0.1s">
+          <div class="stat-number"><span class="count-up" data-target="650">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item reveal" style="transition-delay:0.2s">
+          <div class="stat-number"><span class="count-up" data-target="580">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-label">Happy Clients</div>
+        </div>
+        <div class="stat-item reveal" style="transition-delay:0.3s">
+          <div class="stat-number"><span class="count-up" data-target="120">0</span><span class="stat-plus">+</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat-label">Skilled Workers</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">What We Do</div>
+        <h2 class="section-title">Our Core Services</h2>
+        <p class="section-desc">From concept to completion, we provide a full spectrum of construction services tailored to your needs — delivering on time, within budget, every time.</p>
+      </div>
+      <div class="services-grid reveal">
+        <div class="service-card">
+          <div class="service-icon">🏠</div>
+          <div class="service-title">Residential Construction</div>
+          <p class="service-desc">Custom homes, villas, and apartment complexes built with premium materials and precision craftsmanship for lasting quality.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏢</div>
+          <div class="service-title">Commercial Construction</div>
+          <p class="service-desc">Office complexes, retail spaces, and commercial buildings designed for functionality, aesthetics, and business growth.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔨</div>
+          <div class="service-title">Renovation Works</div>
+          <p class="service-desc">Complete structural and interior renovation with minimal disruption, breathing new life into existing properties.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🪑</div>
+          <div class="service-title">Interior Design</div>
+          <p class="service-desc">Bespoke interiors that blend aesthetics with practicality — crafted to reflect your style and elevate your space.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <div class="service-title">Architectural Planning</div>
+          <p class="service-desc">Detailed architectural drawings, 3D modeling, and planning approvals — ensuring your vision is perfectly realized.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">⚙️</div>
+          <div class="service-title">Civil Contracting</div>
+          <p class="service-desc">End-to-end civil contracting services for roads, foundations, drainage, and structural works with certified engineers.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📋</div>
+          <div class="service-title">Project Management</div>
+          <p class="service-desc">Comprehensive project oversight — coordinating timelines, budgets, subcontractors, and quality at every phase.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <div class="service-title">Building Development</div>
+          <p class="service-desc">Full turnkey development solutions from site acquisition and approvals through to handover — stress-free for clients.</p>
+          <div class="service-link">Learn More <span class="service-link-arrow">→</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-image-stack reveal-left">
+          <img class="why-img-main" src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=900&auto=format&fit=crop&q=80" alt="Engineering team at work"/>
+          <img class="why-img-sub" src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&auto=format&fit=crop&q=80" alt="Architectural blueprints"/>
+          <div class="why-badge-img">
+            <div class="why-badge-num">19+</div>
+            <div class="why-badge-txt">Years of<br/>Excellence</div>
+          </div>
+        </div>
+        <div class="why-content reveal-right">
+          <div class="section-header" style="text-align:left;margin-bottom:32px">
+            <div class="section-tag" style="justify-content:flex-start">Why Choose Us</div>
+            <h2 class="section-title" style="font-size:clamp(1.7rem,3vw,2.4rem)">The Trusted Name in Construction Across Trichy</h2>
+            <p class="section-desc" style="margin:0;text-align:left">With nearly two decades of experience, Shanthi Constructions has set the benchmark for quality, reliability, and innovation in Tamil Nadu's construction industry.</p>
+          </div>
+          <div class="why-points">
+            <div class="why-point">
+              <div class="why-point-icon">✓</div>
+              <div>
+                <div class="why-point-title">ISO Certified Quality</div>
+                <div class="why-point-desc">Every project adheres to strict quality standards and industry best practices.</div>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon">⏰</div>
+              <div>
+                <div class="why-point-title">On-Time Delivery</div>
+                <div class="why-point-desc">We honour our timelines — 98% of projects delivered on schedule.</div>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon">💰</div>
+              <div>
+                <div class="why-point-title">Transparent Pricing</div>
+                <div class="why-point-desc">No hidden costs. Detailed quotations and full cost transparency.</div>
+              </div>
+            </div>
+            <div class="why-point">
+              <div class="why-point-icon">👷</div>
+              <div>
+                <div class="why-point-title">Expert Team</div>
+                <div class="why-point-desc">120+ skilled engineers, architects, and contractors on board.</div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top:36px">
+            <a class="btn-primary" href="#" onclick="showPage('about');return false">Our Story →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SHOWCASE -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Work</div>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-desc">A selection of landmark projects that define our commitment to excellence across Trichy and Tamil Nadu.</p>
+      </div>
+      <div class="project-filters reveal">
+        <button class="filter-btn active">All Projects</button>
+        <button class="filter-btn">Residential</button>
+        <button class="filter-btn">Commercial</button>
+        <button class="filter-btn">Interior</button>
+        <button class="filter-btn">Renovation</button>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card large reveal">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&auto=format&fit=crop&q=80" alt="Luxury Villa Trichy"/>
+          <div class="project-card-overlay"></div>
+          <div class="project-card-info">
+            <div class="project-cat">Residential</div>
+            <div class="project-name">Kaveri Luxury Villas</div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.1s">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=600&auto=format&fit=crop&q=80" alt="Commercial Building"/>
+          <div class="project-card-overlay"></div>
+          <div class="project-card-info">
+            <div class="project-cat">Commercial</div>
+            <div class="project-name">Shri Business Park</div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.15s">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&auto=format&fit=crop&q=80" alt="Interior Design"/>
+          <div class="project-card-overlay"></div>
+          <div class="project-card-info">
+            <div class="project-cat">Interior</div>
+            <div class="project-name">Elite Home Interiors</div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.2s">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&auto=format&fit=crop&q=80" alt="Architecture Planning"/>
+          <div class="project-card-overlay"></div>
+          <div class="project-card-info">
+            <div class="project-cat">Architectural</div>
+            <div class="project-name">Golden Arch Residency</div>
+          </div>
+        </div>
+        <div class="project-card reveal" style="transition-delay:0.25s">
+          <img src="https://images.unsplash.com/photo-1525438160292-a4a860951216?w=600&auto=format&fit=crop&q=80" alt="Renovation Project"/>
+          <div class="project-card-overlay"></div>
+          <div class="project-card-info">
+            <div class="project-cat">Renovation</div>
+            <div class="project-name">Heritage Bungalow Restoration</div>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:48px" class="reveal">
+        <a class="btn-primary" href="#" onclick="showPage('projects');return false">View All Projects →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Client Voices</div>
+        <h2 class="section-title section-title-dark">What Our Clients Say</h2>
+        <p class="section-desc section-desc-dark">The trust of 580+ satisfied clients across Trichy is the foundation of everything we do.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Shanthi Constructions built our dream home exactly as envisioned. Their attention to detail, quality of materials, and transparent communication made the entire process stress-free. Highly recommended!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <div class="testimonial-name">Rajesh Kumar</div>
+              <div class="testimonial-role">Homeowner – Trichy</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.1s">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">We contracted Shanthi for our 3-story commercial building. The project was completed 2 weeks ahead of schedule and the structural quality exceeded our expectations. A truly professional team.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">PM</div>
+            <div>
+              <div class="testimonial-name">Priya Manikandan</div>
+              <div class="testimonial-role">Business Owner – Trichy</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" style="transition-delay:0.2s">
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">The renovation of our 20-year-old building was handled flawlessly. Modern finishing, minimal disruption, and the result is absolutely stunning. Shanthi Constructions truly delivers on every promise.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SK</div>
+            <div>
+              <div class="testimonial-name">Senthil Kumaran</div>
+              <div class="testimonial-role">Property Developer – Trichy</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title">Ready to Build Something<br/>Exceptional?</h2>
+      <p class="cta-desc">Contact Shanthi Constructions today for a free site consultation and detailed project estimate. Let's turn your vision into reality.</p>
+      <div class="cta-actions">
+        <a class="btn-dark" href="#" onclick="showPage('contact');return false">Get Free Consultation</a>
+        <a class="btn-outline-dark" href="tel:+919876543210">📞 +91 98765 43210</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <div class="nav-logo-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L2 14h4v16h7v-8h6v8h7V14h4L16 2zm0 3.5L26 14.5V28h-4v-8H10v8H6V14.5L16 5.5z"/></svg></div>
+            <div class="footer-brand-text">Shanthi <span>Constructions</span></div>
+          </div>
+          <p class="footer-brand-desc">A premier construction company based in Trichy, Tamil Nadu. Delivering quality, trust, and excellence in every structure we build since 2005.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#" aria-label="Facebook" title="Facebook">f</a>
+            <a class="social-btn" href="#" aria-label="Instagram" title="Instagram">in</a>
+            <a class="social-btn" href="#" aria-label="YouTube" title="YouTube">▶</a>
+            <a class="social-btn" href="#" aria-label="LinkedIn" title="LinkedIn">Li</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <div class="footer-links">
+            <a href="#" onclick="showPage('home');return false">Home</a>
+            <a href="#" onclick="showPage('about');return false">About Us</a>
+            <a href="#" onclick="showPage('services');return false">Services</a>
+            <a href="#" onclick="showPage('projects');return false">Projects</a>
+            <a href="#" onclick="showPage('contact');return false">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <div class="footer-links">
+            <a href="#">Residential Construction</a>
+            <a href="#">Commercial Buildings</a>
+            <a href="#">Renovation Works</a>
+            <a href="#">Interior Design</a>
+            <a href="#">Architectural Planning</a>
+            <a href="#">Civil Contracting</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Contact Info</div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <div>
+              <div class="footer-contact-label">Address</div>
+              <div class="footer-contact-val">No. 42, Anna Salai, Srirangam,<br/>Trichy – 620 006, Tamil Nadu</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <div>
+              <div class="footer-contact-label">Phone</div>
+              <div class="footer-contact-val">+91 98765 43210<br/>+91 87654 32109</div>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉</div>
+            <div>
+              <div class="footer-contact-label">Email</div>
+              <div class="footer-contact-val">info@shanthiconstructions.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 <span>Shanthi Constructions</span>. All Rights Reserved. Trichy, Tamil Nadu.</div>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div><!-- end home -->
+
+
+<!-- ================================================================ -->
+<!-- ABOUT PAGE -->
+<!-- ================================================================ -->
+<div id="page-about" class="page-section">
+
+  <div style="height:80px"></div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&auto=format&fit=crop&q=80" alt="About Shanthi Constructions"/>
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-tag">Who We Are</div>
+      <h1 class="page-hero-title">About Shanthi Constructions</h1>
+      <div class="page-hero-breadcrumb">Home <span>/</span> About Us</div>
+    </div>
+  </section>
+
+  <section class="about-intro">
+    <div class="container">
+      <div class="about-intro-grid">
+        <div class="about-intro-img reveal-left">
+          <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=800&auto=format&fit=crop&q=80" alt="Shanthi Constructions team"/>
+          <div class="about-intro-accent"></div>
+        </div>
+        <div class="reveal-right">
+          <div class="about-est">Established 2005 · Trichy, Tamil Nadu</div>
+          <h2 class="about-intro-title">Two Decades of Building Trust, Quality & Excellence</h2>
+          <p class="about-intro-text">Shanthi Constructions was founded in 2005 with a singular purpose — to bring world-class construction quality to the homes and businesses of Trichy. What started as a small residential contracting firm has grown into one of Tamil Nadu's most trusted full-service construction companies.</p>
+          <p class="about-intro-text">We have successfully delivered over 650 projects — from bespoke luxury villas to large-scale commercial complexes — each one a testament to our unwavering commitment to quality, transparency, and client satisfaction.</p>
+          <div class="about-vals">
+            <div class="about-val">
+              <div class="about-val-title">Quality First</div>
+              <div class="about-val-desc">Premium materials and rigorous quality checks at every stage of construction.</div>
+            </div>
+            <div class="about-val">
+              <div class="about-val-title">Client-Centric</div>
+              <div class="about-val-desc">Your vision drives every decision — we listen, plan, and deliver to your expectations.</div>
+            </div>
+            <div class="about-val">
+              <div class="about-val-title">Safety Standards</div>
+              <div class="about-val-desc">Rigorous on-site safety protocols protecting our workers and your investment.</div>
+            </div>
+            <div class="about-val">
+              <div class="about-val-title">Sustainability</div>
+              <div class="about-val-desc">Eco-conscious construction practices for a greener tomorrow.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="vm-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Foundation</div>
+        <h2 class="section-title section-title-dark">Vision & Mission</h2>
+      </div>
+      <div class="vm-grid">
+        <div class="vm-card reveal">
+          <div class="vm-icon">🎯</div>
+          <div class="vm-title">Our Vision</div>
+          <p class="vm-text">To be the most trusted and admired construction company in South India — setting the gold standard for quality, innovation, and integrity in the built environment.</p>
+          <div class="vm-points">
+            <div class="vm-point">Lead through innovation in construction technology</div>
+            <div class="vm-point">Deliver sustainable, future-ready infrastructure</div>
+            <div class="vm-point">Create landmark projects that inspire communities</div>
+          </div>
+        </div>
+        <div class="vm-card reveal" style="transition-delay:0.15s">
+          <div class="vm-icon">🚀</div>
+          <div class="vm-title">Our Mission</div>
+          <p class="vm-text">To deliver exceptional construction services that exceed client expectations through skilled craftsmanship, transparent processes, and an unrelenting commitment to excellence in every project we undertake.</p>
+          <div class="vm-points">
+            <div class="vm-point">Build on time and within agreed budget</div>
+            <div class="vm-point">Uphold the highest safety and quality standards</div>
+            <div class="vm-point">Foster long-term relationships built on trust</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our People</div>
+        <h2 class="section-title">Meet the Leadership Team</h2>
+        <p class="section-desc">Experienced professionals driving Shanthi Constructions' pursuit of excellence every day.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal">
+          <img class="team-img" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=80" alt="Managing Director"/>
+          <div class="team-info">
+            <div class="team-name">S. Muruganantham</div>
+            <div class="team-role">Managing Director</div>
+            <div class="team-desc">25+ years in civil engineering and construction management across Tamil Nadu.</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:0.1s">
+          <img class="team-img" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80" alt="Chief Architect"/>
+          <div class="team-info">
+            <div class="team-name">Priya Natarajan</div>
+            <div class="team-role">Chief Architect</div>
+            <div class="team-desc">Award-winning architect specializing in sustainable residential and commercial design.</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:0.2s">
+          <img class="team-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80" alt="Project Director"/>
+          <div class="team-info">
+            <div class="team-name">Anand Krishnamurthy</div>
+            <div class="team-role">Project Director</div>
+            <div class="team-desc">Expert in large-scale project execution with a 100% on-time delivery track record.</div>
+          </div>
+        </div>
+        <div class="team-card reveal" style="transition-delay:0.3s">
+          <img class="team-img" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80" alt="Head of Engineering"/>
+          <div class="team-info">
+            <div class="team-name">Vijay Sundar</div>
+            <div class="team-role">Head of Engineering</div>
+            <div class="team-desc">Structural engineering expert ensuring safety and integrity across all our projects.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="timeline-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Journey</div>
+        <h2 class="section-title">Milestones & Achievements</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2005</div>
+            <div class="timeline-title">Company Founded</div>
+            <p class="timeline-desc">Shanthi Constructions established in Trichy with a 10-member team focused on residential construction.</p>
+          </div>
+          <div class="timeline-content"></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2009</div>
+            <div class="timeline-title">100th Project Milestone</div>
+            <p class="timeline-desc">Completed our 100th project — a landmark 50-unit residential complex in Srirangam.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2013</div>
+            <div class="timeline-title">Commercial Division Launch</div>
+            <p class="timeline-desc">Expanded into commercial construction, winning our first major corporate campus project.</p>
+          </div>
+          <div class="timeline-content"></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2017</div>
+            <div class="timeline-title">ISO 9001 Certification</div>
+            <p class="timeline-desc">Achieved ISO 9001:2015 certification for quality management systems — a mark of our commitment to excellence.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2022</div>
+            <div class="timeline-title">500+ Projects Delivered</div>
+            <p class="timeline-desc">Crossed the 500-project milestone, cementing our position as Trichy's premier construction company.</p>
+          </div>
+          <div class="timeline-content"></div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content"></div>
+          <div class="timeline-content">
+            <div class="timeline-year">2024</div>
+            <div class="timeline-title">Expansion & Innovation</div>
+            <p class="timeline-desc">Launched green building division and expanded operations across all of Tamil Nadu with 120+ team members.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA + FOOTER (repeated) -->
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title">Partner with Trichy's Most Trusted Builder</h2>
+      <p class="cta-desc">Let's discuss your project. Our team is ready to provide expert guidance and a detailed proposal.</p>
+      <div class="cta-actions">
+        <a class="btn-dark" href="#" onclick="showPage('contact');return false">Get Free Consultation</a>
+        <a class="btn-outline-dark" href="#" onclick="showPage('projects');return false">See Our Projects</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <div class="nav-logo-icon"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><path d="M16 2L2 14h4v16h7v-8h6v8h7V14h4L16 2zm0 3.5L26 14.5V28h-4v-8H10v8H6V14.5L16 5.5z"/></svg></div>
+            <div class="footer-brand-text">Shanthi <span>Constructions</span></div>
+          </div>
+          <p class="footer-brand-desc">A premier construction company in Trichy, delivering quality and trust in every project since 2005.</p>
+          <div class="footer-socials">
+            <a class="social-btn" href="#">f</a>
+            <a class="social-btn" href="#">in</a>
+            <a class="social-btn" href="#">▶</a>
+            <a class="social-btn" href="#">Li</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <div class="footer-links">
+            <a href="#" onclick="showPage('home');return false">Home</a>
+            <a href="#" onclick="showPage('about');return false">About Us</a>
+            <a href="#" onclick="showPage('services');return false">Services</a>
+            <a href="#" onclick="showPage('projects');return false">Projects</a>
+            <a href="#" onclick="showPage('contact');return false">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <div class="footer-links">
+            <a href="#">Residential Construction</a>
+            <a href="#">Commercial Buildings</a>
+            <a href="#">Renovation Works</a>
+            <a href="#">Interior Design</a>
+            <a href="#">Civil Contracting</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Contact Info</div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📍</div>
+            <div><div class="footer-contact-label">Address</div><div class="footer-contact-val">No. 42, Anna Salai, Srirangam, Trichy – 620 006</div></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">📞</div>
+            <div><div class="footer-contact-label">Phone</div><div class="footer-contact-val">+91 98765 43210</div></div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon">✉</div>
+            <div><div class="footer-contact-label">Email</div><div class="footer-contact-val">info@shanthiconstructions.com</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 <span>Shanthi Constructions</span>. All Rights Reserved.</div>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</div><!-- end about -->
+
+
+<!-- ================================================================ -->
+<!-- SERVICES PAGE -->
+<!-- ================================================================ -->
+<div id="page-services" class="page-section">
+  <div style="height:80px"></div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=1600&auto=format&fit=crop&q=80" alt="Our Services"/>
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-tag">What We Offer</div>
+      <h1 class="page-hero-title">Our Services</h1>
+      <div class="page-hero-breadcrumb">Home <span>/</span> Services</div>
+    </div>
+  </section>
+
+  <section class="services-page-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Expertise</div>
+        <h2 class="section-title">Complete Construction Solutions</h2>
+        <p class="section-desc">From individual home builds to large-scale commercial developments, we offer a comprehensive range of construction services tailored to every need.</p>
+      </div>
+      <div class="services-page-grid">
+        <div class="service-page-card reveal">
+          <div class="svc-icon-wrap">🏠</div>
+          <div class="svc-title">Residential Construction</div>
+          <p class="svc-desc">Crafting dream homes with superior build quality, modern design, and lasting structural integrity — from individual bungalows to multi-storey apartments.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Custom Home Design & Build</div>
+            <div class="svc-feature">Apartment & Villa Construction</div>
+            <div class="svc-feature">Gated Community Projects</div>
+            <div class="svc-feature">Budget & Luxury Segments</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal" style="transition-delay:0.08s">
+          <div class="svc-icon-wrap">🏢</div>
+          <div class="svc-title">Commercial Buildings</div>
+          <p class="svc-desc">Modern, functional, and aesthetically striking commercial spaces that serve your business goals and make the right impression on clients and employees alike.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Office Complexes</div>
+            <div class="svc-feature">Retail & Shopping Spaces</div>
+            <div class="svc-feature">Industrial Facilities</div>
+            <div class="svc-feature">Warehouses & Logistics</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal" style="transition-delay:0.16s">
+          <div class="svc-icon-wrap">🔨</div>
+          <div class="svc-title">Renovation & Remodelling</div>
+          <p class="svc-desc">Breathing new life into existing spaces with comprehensive structural and cosmetic renovations — transforming ageing properties into modern masterpieces.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Full Building Renovation</div>
+            <div class="svc-feature">Kitchen & Bathroom Remodels</div>
+            <div class="svc-feature">Structural Strengthening</div>
+            <div class="svc-feature">Facade Upgrades</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal" style="transition-delay:0.24s">
+          <div class="svc-icon-wrap">🪑</div>
+          <div class="svc-title">Interior Design</div>
+          <p class="svc-desc">Thoughtfully curated interiors that blend elegance with functionality — creating spaces that are as beautiful as they are liveable.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Residential Interior Design</div>
+            <div class="svc-feature">Commercial Space Planning</div>
+            <div class="svc-feature">Custom Furniture & Joinery</div>
+            <div class="svc-feature">Lighting & Material Selection</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal">
+          <div class="svc-icon-wrap">📐</div>
+          <div class="svc-title">Architectural Design</div>
+          <p class="svc-desc">Creative and technically precise architectural design services — from concept sketches to detailed working drawings and statutory approvals.</p>
+          <div class="svc-features">
+            <div class="svc-feature">2D & 3D Design Drawings</div>
+            <div class="svc-feature">Planning Permission Support</div>
+            <div class="svc-feature">Site Analysis & Feasibility</div>
+            <div class="svc-feature">Green Building Design</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal" style="transition-delay:0.08s">
+          <div class="svc-icon-wrap">🏗️</div>
+          <div class="svc-title">Structural Planning</div>
+          <p class="svc-desc">Expert structural engineering and planning ensuring the safety, integrity, and longevity of every structure we design and build.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Structural Analysis & Design</div>
+            <div class="svc-feature">Foundation Engineering</div>
+            <div class="svc-feature">Seismic & Load Analysis</div>
+            <div class="svc-feature">BOQ & Cost Estimation</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal" style="transition-delay:0.16s">
+          <div class="svc-icon-wrap">🔑</div>
+          <div class="svc-title">Turnkey Projects</div>
+          <p class="svc-desc">Complete end-to-end project delivery — from site selection and design through construction, finishing, and handover — all under one trusted roof.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Single-Point Accountability</div>
+            <div class="svc-feature">Design + Build Integration</div>
+            <div class="svc-feature">All Government Approvals</div>
+            <div class="svc-feature">Ready-to-Move Handover</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+        <div class="service-page-card reveal" style="transition-delay:0.24s">
+          <div class="svc-icon-wrap">⚙️</div>
+          <div class="svc-title">Civil Engineering Services</div>
+          <p class="svc-desc">Comprehensive civil contracting including roads, drainage, water supply, and infrastructure works executed by experienced engineers.</p>
+          <div class="svc-features">
+            <div class="svc-feature">Road & Pavement Works</div>
+            <div class="svc-feature">Drainage & Sewerage</div>
+            <div class="svc-feature">Compound Wall & Fencing</div>
+            <div class="svc-feature">Site Development Works</div>
+          </div>
+          <div class="svc-btn">Learn More →</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title">Have a Project in Mind?</h2>
+      <p class="cta-desc">Tell us about your requirements and our expert team will provide a detailed proposal within 24 hours — absolutely free.</p>
+      <div class="cta-actions">
+        <a class="btn-dark" href="#" onclick="showPage('contact');return false">Request a Proposal</a>
+        <a class="btn-outline-dark" href="tel:+919876543210">📞 +91 98765 43210</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo">
+            <div class="nav-logo-icon"><svg viewBox="0 0 32 32"><path d="M16 2L2 14h4v16h7v-8h6v8h7V14h4L16 2zm0 3.5L26 14.5V28h-4v-8H10v8H6V14.5L16 5.5z"/></svg></div>
+            <div class="footer-brand-text">Shanthi <span>Constructions</span></div>
+          </div>
+          <p class="footer-brand-desc">Building dreams with strength and precision across Trichy since 2005.</p>
+          <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">in</a><a class="social-btn" href="#">▶</a></div>
+        </div>
+        <div>
+          <div class="footer-heading">Quick Links</div>
+          <div class="footer-links">
+            <a href="#" onclick="showPage('home');return false">Home</a>
+            <a href="#" onclick="showPage('about');return false">About Us</a>
+            <a href="#" onclick="showPage('services');return false">Services</a>
+            <a href="#" onclick="showPage('projects');return false">Projects</a>
+            <a href="#" onclick="showPage('contact');return false">Contact</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Services</div>
+          <div class="footer-links">
+            <a href="#">Residential</a><a href="#">Commercial</a><a href="#">Renovation</a><a href="#">Interior Design</a><a href="#">Civil Works</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-heading">Contact</div>
+          <div class="footer-contact-item"><div class="footer-contact-icon">📍</div><div><div class="footer-contact-label">Address</div><div class="footer-contact-val">No. 42, Anna Salai, Srirangam, Trichy – 620 006</div></div></div>
+          <div class="footer-contact-item"><div class="footer-contact-icon">📞</div><div><div class="footer-contact-label">Phone</div><div class="footer-contact-val">+91 98765 43210</div></div></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">© 2025 <span>Shanthi Constructions</span>. All Rights Reserved.</div>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+</div><!-- end services -->
+
+
+<!-- ================================================================ -->
+<!-- PROJECTS PAGE -->
+<!-- ================================================================ -->
+<div id="page-projects" class="page-section">
+  <div style="height:80px"></div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1600&auto=format&fit=crop&q=80" alt="Our Projects"/>
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-tag">Our Portfolio</div>
+      <h1 class="page-hero-title">Projects & Portfolio</h1>
+      <div class="page-hero-breadcrumb">Home <span>/</span> Projects</div>
+    </div>
+  </section>
+
+  <section class="projects-page-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-tag">Our Work</div>
+        <h2 class="section-title">650+ Projects Delivered Across Tamil Nadu</h2>
+        <p class="section-desc">Every project is a story of trust, craftsmanship, and dedication. Here are some of our proudest achievements.</p>
+      </div>
+      <div class="project-filters reveal" style="margin-bottom:40px">
+        <button class="filter-btn active" onclick="filterProjects('all',this)">All</button>
+        <button class="filter-btn" onclick="filterProjects('residential',this)">Residential</button>
+        <button class="filter-btn" onclick="filterProjects('commercial',this)">Commercial</button>
+        <button class="filter-btn" onclick="filterProjects('interior',this)">Interior</button>
+        <button class="filter-btn" onclick="filterProjects('renovation',this)">Renovation</button>
+      </div>
+      <div class="projects-page-grid" id="projectsGrid">
+        <div class="project-page-card featured reveal" data-cat="residential">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1000&auto=format&fit=crop&q=80" alt="Kaveri Luxury Villas"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Residential</div>
+            <div class="project-page-name">Kaveri Luxury Villas</div>
+            <div class="project-page-loc">📍 Srirangam, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="commercial" style="transition-delay:0.05s">
+          <img src="https://images.unsplash.com/photo-1486325212027-8081e485255e?w=700&auto=format&fit=crop&q=80" alt="Commercial Building"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Commercial</div>
+            <div class="project-page-name">Shri Business Park</div>
+            <div class="project-page-loc">📍 Thillai Nagar, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="interior" style="transition-delay:0.1s">
+          <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=700&auto=format&fit=crop&q=80" alt="Interior Design"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Interior</div>
+            <div class="project-page-name">Elite Home Interiors</div>
+            <div class="project-page-loc">📍 KK Nagar, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="residential" style="transition-delay:0.05s">
+          <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=700&auto=format&fit=crop&q=80" alt="Apartment Complex"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Residential</div>
+            <div class="project-page-name">Sri Residency Apartments</div>
+            <div class="project-page-loc">📍 Ariyamangalam, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="renovation" style="transition-delay:0.1s">
+          <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700&auto=format&fit=crop&q=80" alt="Renovation"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Renovation</div>
+            <div class="project-page-name">Heritage Bungalow Restoration</div>
+            <div class="project-page-loc">📍 Woraiyur, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="commercial" style="transition-delay:0.15s">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=700&auto=format&fit=crop&q=80" alt="Office Interior"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Commercial</div>
+            <div class="project-page-name">Medtronic Office Campus</div>
+            <div class="project-page-loc">📍 Palakarai, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="residential" style="transition-delay:0.1s">
+          <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&auto=format&fit=crop&q=80" alt="Modern Villa"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Residential</div>
+            <div class="project-page-name">Golden Arch Residency</div>
+            <div class="project-page-loc">📍 Manachanallur, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="interior" style="transition-delay:0.15s">
+          <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=700&auto=format&fit=crop&q=80" alt="Modern Interior"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Interior</div>
+            <div class="project-page-name">Luxe Living Interiors</div>
+            <div class="project-page-loc">📍 Cantonment, Trichy</div>
+          </div>
+        </div>
+        <div class="project-page-card reveal" data-cat="commercial" style="transition-delay:0.2s">
+          <img src="https://images.unsplash.com/photo-1567449303078-57ad995bd329?w=700&auto=format&fit=crop&q=80" alt="Retail Space"/>
+          <div class="project-page-info">
+            <div class="project-page-cat">Commercial</div>
+            <div class="project-page-name">Central Retail Complex</div>
+            <div class="project-page-loc">📍 Chathiram Bus Stand, Trichy</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner reveal">
+      <h2 class="cta-title">Want to See Your Project Here?</h2>
+      <p class="cta-desc">Join 580+ satisfied clients across Trichy who've trusted Shanthi Constructions with their biggest investment.</p>
+      <div class="cta-actions">
+        <a class="btn-dark" href="#" onclick="showPage('contact');return false">Start Your Project</a>
+        <a class="btn-outline-dark" href="#" onclick="showPage('services');return false">Explore Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo"><div class="nav-logo-icon"><svg viewBox="0 0 32 32"><path d="M16 2L2 14h4v16h7v-8h6v8h7V14h4L16 2zm0 3.5L26 14.5V28h-4v-8H10v8H6V14.5L16 5.5z"/></svg></div><div class="footer-brand-text">Shanthi <span>Constructions</span></div></div>
+          <p class="footer-brand-desc">Building excellence across Trichy since 2005.</p>
+          <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">in</a><a class="social-btn" href="#">▶</a></div>
+        </div>
+        <div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="#" onclick="showPage('home');return false">Home</a><a href="#" onclick="showPage('about');return false">About</a><a href="#" onclick="showPage('services');return false">Services</a><a href="#" onclick="showPage('projects');return false">Projects</a><a href="#" onclick="showPage('contact');return false">Contact</a></div></div>
+        <div><div class="footer-heading">Services</div><div class="footer-links"><a href="#">Residential</a><a href="#">Commercial</a><a href="#">Renovation</a><a href="#">Interior</a></div></div>
+        <div><div class="footer-heading">Contact</div><div class="footer-contact-item"><div class="footer-contact-icon">📍</div><div><div class="footer-contact-label">Address</div><div class="footer-contact-val">No. 42, Anna Salai, Srirangam, Trichy – 620 006</div></div></div><div class="footer-contact-item"><div class="footer-contact-icon">📞</div><div><div class="footer-contact-label">Phone</div><div class="footer-contact-val">+91 98765 43210</div></div></div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-copy">© 2025 <span>Shanthi Constructions</span>. All Rights Reserved.</div><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    </div>
+  </footer>
+</div><!-- end projects -->
+
+
+<!-- ================================================================ -->
+<!-- CONTACT PAGE -->
+<!-- ================================================================ -->
+<div id="page-contact" class="page-section">
+  <div style="height:80px"></div>
+
+  <section class="page-hero">
+    <div class="page-hero-bg">
+      <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&auto=format&fit=crop&q=80" alt="Contact Shanthi Constructions"/>
+    </div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <div class="page-hero-tag">Get in Touch</div>
+      <h1 class="page-hero-title">Contact Us</h1>
+      <div class="page-hero-breadcrumb">Home <span>/</span> Contact</div>
+    </div>
+  </section>
+
+  <section class="contact-page-section">
+    <div class="container">
+      <div class="contact-page-grid">
+        <div class="contact-form-card reveal-left">
+          <div class="contact-form-title">Send Us an Enquiry</div>
+          <p class="contact-form-sub">Fill in the form below and our team will respond within 24 hours with a detailed consultation.</p>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Your Name *</label>
+              <input type="text" placeholder="Enter your full name"/>
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="tel" placeholder="+91 XXXXX XXXXX"/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com"/>
+          </div>
+          <div class="form-group">
+            <label>Service Required *</label>
+            <select>
+              <option value="" disabled selected>Select a service</option>
+              <option>Residential Construction</option>
+              <option>Commercial Construction</option>
+              <option>Renovation Works</option>
+              <option>Interior Design</option>
+              <option>Architectural Planning</option>
+              <option>Civil Contracting</option>
+              <option>Project Management</option>
+              <option>Building Development</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Project Location</label>
+              <input type="text" placeholder="Trichy / Your area"/>
+            </div>
+            <div class="form-group">
+              <label>Estimated Budget</label>
+              <select>
+                <option value="" disabled selected>Select budget range</option>
+                <option>Below ₹10 Lakhs</option>
+                <option>₹10–25 Lakhs</option>
+                <option>₹25–50 Lakhs</option>
+                <option>₹50 Lakhs – 1 Cr</option>
+                <option>Above ₹1 Crore</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>Project Details</label>
+            <textarea placeholder="Tell us about your project — type, size, special requirements, timeline..."></textarea>
+          </div>
+          <button class="form-submit-btn" onclick="handleFormSubmit()">Submit Enquiry →</button>
+        </div>
+
+        <div class="contact-info-sidebar reveal-right">
+          <div class="contact-info-card">
+            <div class="contact-info-card-title">Contact Information</div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <div class="contact-detail-label">Office Address</div>
+                <div class="contact-detail-val">No. 42, Anna Salai, Srirangam,<br/>Trichy – 620 006, Tamil Nadu</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div>
+                <div class="contact-detail-label">Phone</div>
+                <div class="contact-detail-val">+91 98765 43210<br/>+91 87654 32109</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">✉</div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-val">info@shanthiconstructions.com<br/>projects@shanthiconstructions.com</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">💬</div>
+              <div>
+                <div class="contact-detail-label">WhatsApp</div>
+                <div class="contact-detail-val">+91 98765 43210<br/><small style="color:#888">Available 9 AM – 7 PM</small></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-hours-card">
+            <div class="contact-hours-title">🕐 Working Hours</div>
+            <div class="hours-row"><span class="hours-day">Monday – Friday</span><span class="hours-open">9:00 AM – 6:30 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Saturday</span><span class="hours-open">9:00 AM – 4:00 PM</span></div>
+            <div class="hours-row"><span class="hours-day">Sunday</span><span style="color:#c00;font-weight:700">By Appointment</span></div>
+          </div>
+
+          <div style="background:#F4B400;padding:28px;border-radius:2px">
+            <div style="font-weight:900;font-size:0.95rem;color:#1E1E1E;margin-bottom:8px">📞 Quick Call</div>
+            <p style="font-size:0.82rem;color:rgba(30,30,30,0.75);margin-bottom:16px">Prefer to talk? Call us directly for an instant discussion about your project.</p>
+            <a href="tel:+919876543210" class="btn-dark" style="display:inline-flex;padding:12px 22px;font-size:0.8rem">Call Now: +91 98765 43210</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="map-section">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:32px">
+        <div class="section-tag">Find Us</div>
+        <h2 class="section-title">Our Office Location</h2>
+      </div>
+      <div class="map-placeholder reveal">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62783.70540985753!2d78.64163695!3d10.79049575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baaf50ff4592b23%3A0xe243e5a5c2b7c0e8!2sTiruchirappalli%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Shanthi Constructions Location Trichy">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-logo"><div class="nav-logo-icon"><svg viewBox="0 0 32 32"><path d="M16 2L2 14h4v16h7v-8h6v8h7V14h4L16 2zm0 3.5L26 14.5V28h-4v-8H10v8H6V14.5L16 5.5z"/></svg></div><div class="footer-brand-text">Shanthi <span>Constructions</span></div></div>
+          <p class="footer-brand-desc">Building dreams with strength and precision across Trichy since 2005.</p>
+          <div class="footer-socials"><a class="social-btn" href="#">f</a><a class="social-btn" href="#">in</a><a class="social-btn" href="#">▶</a></div>
+        </div>
+        <div><div class="footer-heading">Quick Links</div><div class="footer-links"><a href="#" onclick="showPage('home');return false">Home</a><a href="#" onclick="showPage('about');return false">About</a><a href="#" onclick="showPage('services');return false">Services</a><a href="#" onclick="showPage('projects');return false">Projects</a><a href="#" onclick="showPage('contact');return false">Contact</a></div></div>
+        <div><div class="footer-heading">Services</div><div class="footer-links"><a href="#">Residential</a><a href="#">Commercial</a><a href="#">Renovation</a><a href="#">Interior</a></div></div>
+        <div><div class="footer-heading">Contact</div><div class="footer-contact-item"><div class="footer-contact-icon">📍</div><div><div class="footer-contact-label">Address</div><div class="footer-contact-val">No. 42, Anna Salai, Srirangam, Trichy – 620 006</div></div></div><div class="footer-contact-item"><div class="footer-contact-icon">📞</div><div><div class="footer-contact-label">Phone</div><div class="footer-contact-val">+91 98765 43210</div></div></div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-copy">© 2025 <span>Shanthi Constructions</span>. All Rights Reserved.</div><div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a></div></div>
+    </div>
+  </footer>
+</div><!-- end contact -->
+
+
+<!-- ===== SUCCESS TOAST ===== -->
+<div id="toast" style="position:fixed;bottom:100px;left:50%;transform:translateX(-50%) translateY(20px);background:#1E1E1E;color:#fff;padding:14px 28px;border-radius:4px;font-size:0.88rem;font-weight:700;z-index:9000;opacity:0;transition:all 0.4s ease;border-left:4px solid #F4B400;white-space:nowrap;pointer-events:none">
+  ✅ Thank you! We'll contact you within 24 hours.
+</div>
+
+<script>
+// ===== PAGE NAVIGATION =====
+function showPage(page) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.getElementById('page-' + page).classList.add('active');
+  window.scrollTo({top: 0, behavior: 'smooth'});
+  
+  // Update nav active states
+  ['home','about','services','projects','contact'].forEach(p => {
+    const el = document.getElementById('nav-' + p);
+    if (el) el.classList.toggle('active', p === page);
+  });
+
+  // Re-trigger animations for the new page
+  setTimeout(initReveal, 100);
+  
+  // Re-run count-up if home
+  if (page === 'home') setTimeout(initCountUp, 400);
+}
+
+// ===== LOADER =====
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    document.getElementById('loader').classList.add('hidden');
+    initReveal();
+    initCountUp();
+  }, 2000);
+});
+
+// ===== NAVBAR SCROLL =====
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  nav.classList.toggle('scrolled', window.scrollY > 40);
+});
+
+// ===== MOBILE MENU =====
+let menuOpen = false;
+function toggleMobileMenu() {
+  menuOpen = !menuOpen;
+  const menu = document.getElementById('mobileMenu');
+  const btn = document.getElementById('mobileBtn');
+  menu.style.display = menuOpen ? 'flex' : 'none';
+  const spans = btn.querySelectorAll('span');
+  if (menuOpen) {
+    spans[0].style.transform = 'translateY(7px) rotate(45deg)';
+    spans[1].style.opacity = '0';
+    spans[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+  } else {
+    spans[0].style.transform = ''; spans[1].style.opacity = '1'; spans[2].style.transform = '';
+  }
+}
+
+// ===== SCROLL REVEAL =====
+function initReveal() {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
+  }, { threshold: 0.12 });
+  document.querySelectorAll('#page-' + getCurrentPage() + ' .reveal, #page-' + getCurrentPage() + ' .reveal-left, #page-' + getCurrentPage() + ' .reveal-right').forEach(el => {
+    el.classList.remove('visible');
+    observer.observe(el);
+  });
+}
+
+function getCurrentPage() {
+  const active = document.querySelector('.page-section.active');
+  return active ? active.id.replace('page-','') : 'home';
+}
+
+// ===== COUNT UP ANIMATION =====
+function initCountUp() {
+  const els = document.querySelectorAll('#page-home .count-up');
+  els.forEach(el => {
+    const target = parseInt(el.getAttribute('data-target'));
+    let current = 0;
+    const step = Math.ceil(target / 60);
+    const timer = setInterval(() => {
+      current = Math.min(current + step, target);
+      el.textContent = current;
+      if (current >= target) clearInterval(timer);
+    }, 28);
+  });
+}
+
+// ===== PROJECT FILTER =====
+function filterProjects(cat, btn) {
+  document.querySelectorAll('.project-filters .filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('#projectsGrid .project-page-card').forEach(card => {
+    if (cat === 'all' || card.getAttribute('data-cat') === cat) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+// Also apply to home page filters
+document.querySelectorAll('.project-filters .filter-btn').forEach(btn => {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.project-filters .filter-btn').forEach(b => b.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// ===== FORM SUBMIT =====
+function handleFormSubmit() {
+  const toast = document.getElementById('toast');
+  toast.style.opacity = '1';
+  toast.style.transform = 'translateX(-50%) translateY(0)';
+  setTimeout(() => {
+    toast.style.opacity = '0';
+    toast.style.transform = 'translateX(-50%) translateY(20px)';
+  }, 3500);
+}
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', () => {
+  initReveal();
+});
+</script>
+</body>
+</html>
