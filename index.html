@@ -1610,6 +1610,9 @@ function showPage(page) {
     if (el) el.classList.toggle('active', p === page);
   });
 
+  // Update navbar state for the new page
+  updateNavbar();
+
   // Re-trigger animations for the new page
   setTimeout(initReveal, 100);
   
@@ -1628,9 +1631,14 @@ window.addEventListener('load', () => {
 
 // ===== NAVBAR SCROLL =====
 window.addEventListener('scroll', () => {
-  const nav = document.getElementById('navbar');
-  nav.classList.toggle('scrolled', window.scrollY > 40);
+  updateNavbar();
 });
+
+function updateNavbar() {
+  const nav = document.getElementById('navbar');
+  const isHome = getCurrentPage() === 'home';
+  nav.classList.toggle('scrolled', !isHome || window.scrollY > 40);
+}
 
 // ===== MOBILE MENU =====
 let menuOpen = false;
